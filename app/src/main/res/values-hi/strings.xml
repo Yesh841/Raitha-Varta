@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">रैथा वार्ता</string>
+    <string name="welcome_message">किसान की आवाज़</string>
+    <string name="select_language">भाषा चुनें</string>
+    <string name="daily_tip">दैनिक सुझाव</string>
+    <string name="expert_ask">विशेषज्ञ से पूछें</string>
+    <string name="marketplace">बाज़ार</string>
+    <string name="weather">मौसम</string>
+    <string name="pest_detect">कीट पहचान</string>
+    <string name="success_stories">सफलता की कहानियाँ</string>
+    <string name="profile">प्रोफ़ाइल</string>
+</resources>

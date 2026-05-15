@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ரைத்தா வார்த்தா</string>
+    <string name="welcome_message">விவசாயிகளின் குரல்</string>
+    <string name="select_language">மொழியைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="daily_tip">தினசரி குறிப்பு</string>
+    <string name="expert_ask">நிபுணரிடம் கேளுங்கள்</string>
+    <string name="marketplace">சந்தை</string>
+    <string name="weather">வானிலை</string>
+    <string name="pest_detect">பூச்சி கண்டறிதல்</string>
+    <string name="success_stories">வெற்றிக் கதைகள்</string>
+    <string name="profile">சுயவிவரம்</string>
+</resources>

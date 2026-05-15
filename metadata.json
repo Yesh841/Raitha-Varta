@@ -1,0 +1,6 @@
+{
+  "name": "Raitha-Varta",
+  "description": "An AI-powered agricultural advisory app (Farmer's Voice) converting complex crop research into swipable daily tips in local languages (Kannada, English, Hindi, Tamil). Features pest detection, marketplace, and expert advice.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": ["AI Tip Generation", "Pest Detection", "Marketplace", "Multi-language Support"]
+}

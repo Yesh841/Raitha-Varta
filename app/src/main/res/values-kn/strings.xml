@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ರೈತ ವಾರ್ತೆ</string>
+    <string name="welcome_message">ರೈತರ ಧ್ವನಿ</string>
+    <string name="select_language">ಭಾಷೆ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="daily_tip">ದೈನಂದಿನ ಸಲಹೆ</string>
+    <string name="expert_ask">ತಜ್ಞರನ್ನು ಕೇಳಿ</string>
+    <string name="marketplace">ಮಾರುಕಟ್ಟೆ</string>
+    <string name="weather">ಹವಾಮಾನ</string>
+    <string name="pest_detect">ಕೀಟ ಪತ್ತೆ</string>
+    <string name="success_stories">ಯಶಸ್ಸಿನ ಕಥೆಗಳು</string>
+    <string name="profile">ಪ್ರೊಫೈಲ್</string>
+</resources>

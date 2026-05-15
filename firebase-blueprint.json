@@ -1,0 +1,117 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Represents a farmer in the system",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "phone": { "type": "string" },
+        "name": { "type": "string" },
+        "language": { "type": "string", "enum": ["kn", "en", "hi", "ta"] },
+        "location": { "type": "string" },
+        "crops": { "type": "array", "items": { "type": "string" } },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "phone", "language"]
+    },
+    "Tip": {
+      "title": "Tip",
+      "description": "A daily 1-minute flash card tip for farmers",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "cropId": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "date": { "type": "string", "format": "date" },
+        "language": { "type": "string" }
+      },
+      "required": ["cropId", "title", "description", "language"]
+    },
+    "Crop": {
+      "title": "Crop",
+      "description": "A crop type supported by the app",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "nameTranslations": { "type": "object" },
+        "icon": { "type": "string" }
+      },
+      "required": ["name"]
+    },
+    "ExpertQuery": {
+      "title": "ExpertQuery",
+      "description": "A query sent by a farmer to an agricultural expert",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "question": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "response": { "type": "string" },
+        "status": { "type": "string", "enum": ["pending", "answered"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "question"]
+    },
+    "SuccessStory": {
+      "title": "SuccessStory",
+      "description": "Real farmer testimonials",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "farmerName": { "type": "string" },
+        "location": { "type": "string" },
+        "story": { "type": "string" },
+        "photo": { "type": "string" },
+        "cropId": { "type": "string" }
+      },
+      "required": ["farmerName", "story"]
+    },
+    "MarketplaceListing": {
+      "title": "MarketplaceListing",
+      "description": "A crop/product listed for buy/sell",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "price": { "type": "string" },
+        "location": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "type": { "type": "string", "enum": ["sell", "buy"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "title", "price", "type"]
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": "User",
+      "description": "User profiles"
+    },
+    "tips": {
+      "schema": "Tip",
+      "description": "Agricultural tips"
+    },
+    "crops": {
+      "schema": "Crop",
+      "description": "Supported crops"
+    },
+    "expertQueries": {
+      "schema": "ExpertQuery",
+      "description": "Questions for experts"
+    },
+    "successStories": {
+      "schema": "SuccessStory",
+      "description": "Farmer success stories"
+    },
+    "marketplace": {
+      "schema": "MarketplaceListing",
+      "description": "Marketplace items"
+    }
+  }
+}
